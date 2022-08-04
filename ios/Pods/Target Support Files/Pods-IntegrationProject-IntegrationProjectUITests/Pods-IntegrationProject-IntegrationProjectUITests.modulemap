@@ -1,0 +1,6 @@
+module Pods_IntegrationProject_IntegrationProjectUITests {
+  umbrella header "Pods-IntegrationProject-IntegrationProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

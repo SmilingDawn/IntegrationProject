@@ -1,0 +1,6 @@
+module Pods_IntegrationProject {
+  umbrella header "Pods-IntegrationProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
