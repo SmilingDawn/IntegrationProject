@@ -38,7 +38,10 @@ class SecondActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
         SoLoader.init(this, false)
         reactRootView = ReactRootView(this)
 
-        val packages: List<ReactPackage> = PackageList(application).packages
+        val packages: List<ReactPackage> = PackageList(application).packages.apply {
+            add(MyAppPackage())
+        }
+
         reactInstanceManager = ReactInstanceManager.builder()
             .setApplication(application)
             .setCurrentActivity(this)

@@ -37,6 +37,12 @@ const HelloWorld = () => {
     })
   }
 
+  const addEvent = () => {
+    const manager = NativeModules.NativeCounterManager
+    manager.addEvent('JM', 'Seoul', 32)
+  }
+
+
   return (
     <View style={styles.container}>
       <Text style={styles.hello}>Hello, World2</Text>
@@ -47,6 +53,7 @@ const HelloWorld = () => {
     </View>
   );
 };
+
 var styles = StyleSheet.create({
   container: {
     flex: 1,
