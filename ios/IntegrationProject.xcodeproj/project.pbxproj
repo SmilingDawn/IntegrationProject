@@ -16,6 +16,8 @@
 		0FB2F16A289B567400B2F794 /* IntegrationProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2F169289B567400B2F794 /* IntegrationProjectTests.swift */; };
 		0FB2F174289B567400B2F794 /* IntegrationProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2F173289B567400B2F794 /* IntegrationProjectUITests.swift */; };
 		0FB2F176289B567400B2F794 /* IntegrationProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2F175289B567400B2F794 /* IntegrationProjectUITestsLaunchTests.swift */; };
+		0FB2F185289B7C3100B2F794 /* NativeCounterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2F184289B7C3100B2F794 /* NativeCounterManager.swift */; };
+		0FB2F188289B7F3800B2F794 /* NativeCounterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2F187289B7F3800B2F794 /* NativeCounterManager.m */; };
 		2F6A0681B29EDA0E83B9EA28 /* libPods-IntegrationProject-IntegrationProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC49E538317CDC755D404F3 /* libPods-IntegrationProject-IntegrationProjectUITests.a */; };
 		BAB0B9B54412E23EDB7B743E /* libPods-IntegrationProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED00EBE80EEFFA6146B780C /* libPods-IntegrationProjectTests.a */; };
 		D2DC75667E6D2AF8B9813242 /* libPods-IntegrationProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9F64670BA4E8916E793A85 /* libPods-IntegrationProject.a */; };
@@ -53,6 +55,9 @@
 		0FB2F16F289B567400B2F794 /* IntegrationProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB2F173289B567400B2F794 /* IntegrationProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProjectUITests.swift; sourceTree = "<group>"; };
 		0FB2F175289B567400B2F794 /* IntegrationProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FB2F184289B7C3100B2F794 /* NativeCounterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCounterManager.swift; sourceTree = "<group>"; };
+		0FB2F186289B7F3800B2F794 /* IntegrationProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntegrationProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		0FB2F187289B7F3800B2F794 /* NativeCounterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeCounterManager.m; sourceTree = "<group>"; };
 		1B9F64670BA4E8916E793A85 /* libPods-IntegrationProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntegrationProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27695ADCD0213B127291124B /* Pods-IntegrationProject-IntegrationProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegrationProject-IntegrationProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-IntegrationProject-IntegrationProjectUITests/Pods-IntegrationProject-IntegrationProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5830E49EB4790D57CF368FBF /* Pods-IntegrationProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntegrationProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-IntegrationProjectTests/Pods-IntegrationProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +128,9 @@
 				0FB2F15B289B567400B2F794 /* Assets.xcassets */,
 				0FB2F15D289B567400B2F794 /* LaunchScreen.storyboard */,
 				0FB2F160289B567400B2F794 /* Info.plist */,
+				0FB2F184289B7C3100B2F794 /* NativeCounterManager.swift */,
+				0FB2F187289B7F3800B2F794 /* NativeCounterManager.m */,
+				0FB2F186289B7F3800B2F794 /* IntegrationProject-Bridging-Header.h */,
 			);
 			path = IntegrationProject;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 				TargetAttributes = {
 					0FB2F14E289B567400B2F794 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					0FB2F164289B567400B2F794 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -443,6 +452,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB2F157289B567400B2F794 /* ViewController.swift in Sources */,
+				0FB2F185289B7C3100B2F794 /* NativeCounterManager.swift in Sources */,
+				0FB2F188289B7F3800B2F794 /* NativeCounterManager.m in Sources */,
 				0FB2F153289B567400B2F794 /* AppDelegate.swift in Sources */,
 				0FB2F155289B567400B2F794 /* SceneDelegate.swift in Sources */,
 			);
@@ -624,6 +635,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -642,6 +654,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smilingdawn.IntegrationProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "IntegrationProject/IntegrationProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -653,6 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -671,6 +686,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smilingdawn.IntegrationProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "IntegrationProject/IntegrationProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

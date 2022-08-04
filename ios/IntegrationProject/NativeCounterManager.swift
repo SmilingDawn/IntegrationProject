@@ -12,14 +12,14 @@ import OSLog
 class NativeCounterManager: NSObject {
   private var count = 0
   
-  @objc(moveProductDetail:)
-  func moveProductDetail(productId: String) -> Void {
-    os_log("moveProductDetail productID : \(productId)")
+  @objc(sendValue:)
+  func sendValue(value: String) -> Void {
+    os_log("sendValue value : \(value)")
   }
   
-  @objc(moveQADetail:)
-  func moveQADetail(qaId: String) -> Void {
-    os_log("moveQADetail qaId: \(qaId)")
+  @objc(sendValueInt:)
+  func sendValueInt(value: Int) -> Void {
+    os_log("sendValueInt value: \(value)")
   }
   
   @objc(addEvent:location:date:)
